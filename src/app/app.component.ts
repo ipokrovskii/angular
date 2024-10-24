@@ -12,11 +12,13 @@ import { AppEventComponent } from './event/event.component';
 import { AppInputRootComponent } from './input/input-root.component';
 import {AppOutputComponent} from './output/output.component';
 import {AppDeferComponent} from './defer/defer.component';
+import {AppInjectComponent} from './injection/injection.component';
+import {AppPipeComponent} from './pipe/pipe.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, AppValidatorComponent, AppReactiveComponent, UserComponent, AppStartComponent, AppComposeRootComponent, AppEventComponent, AppIfComponent, AppForComponent, AppBindingComponent, AppInputRootComponent, AppOutputComponent, AppDeferComponent],
+  imports: [RouterOutlet, AppValidatorComponent, AppReactiveComponent, UserComponent, AppStartComponent, AppComposeRootComponent, AppEventComponent, AppIfComponent, AppForComponent, AppBindingComponent, AppInputRootComponent, AppOutputComponent, AppDeferComponent, AppInjectComponent, AppPipeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
